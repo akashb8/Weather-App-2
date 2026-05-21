@@ -11,6 +11,7 @@ const WeatherApp: React.FC = () => {
     };
 
     return (
+        <>
         <div
             className="min-h-screen text-white flex flex-col items-center justify-center p-6 relative overflow-hidden bg-cover bg-center bg-no-repeat"
             style={{
@@ -107,6 +108,7 @@ const WeatherApp: React.FC = () => {
                 )}
             </div>
         </div>
+        </>
     );
 };
 

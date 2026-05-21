@@ -8,7 +8,7 @@ export const useWeatherStore=create<weatherState>((set)=>({
     loading:false,
     error:null,
     fetchWeather:async(city:string)=>{
-        const apiKey=import.meta.env.VITE_API_KEY;
+        const apiKey = import.meta.env.VITE_API_KEY || "425f1ebb45ba0270f43f23eacc1b59fd";
         set({loading:true,error:null});
         try{
             const response=await axiosInstance.get(endPoints.query,{
